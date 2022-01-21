@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Calculator</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="calculator-styles.css">
+    </head>
+    <body>
+        <div class="title">Simple Calculator for Simple Calculations</div>
+        <div class="calculator">
+            <table border="1">
+                <tr>
+                    <td colspan="4"><input readonly type="text" style="font-size: larger;" id="calcScreen"></td>
+                </tr>
+                <tr>
+                    <td ><input type="button" value="1" class="calcButton"></td>
+                    <td ><input type="button" value="2" class="calcButton"></td>
+                    <td ><input type="button" value="3" class="calcButton"></td>
+                    <td ><input type="button" value="+" class="calcButton"></td>
+                </tr>
+                <tr>
+                    <td ><input type="button" value="4" class="calcButton"></td>
+                    <td ><input type="button" value="5" class="calcButton"></td>
+                    <td ><input type="button" value="6" class="calcButton"></td>
+                    <td ><input type="button" value="-" class="calcButton"></td>
+                </tr>
+                <tr>
+                    <td ><input type="button" value="7" class="calcButton"></td>
+                    <td ><input type="button" value="8" class="calcButton"></td>
+                    <td ><input type="button" value="9" class="calcButton"></td>
+                    <td ><input type="button" value="*" class="calcButton"></td>
+                </tr>
+                <tr>
+                    <td ><input type="button" value="AC" class="calcButton"></td>
+                    <td ><input type="button" value="0" class="calcButton"></td>
+                    <td ><input type="button" value="=" class="calcButton"></td>
+                    <td ><input type="button" value="/" class="calcButton"></td>
+                </tr>
+            </table>
+        </div>
+        <script src="calculator-logic.js"></script>
+    </body>
+</html>
