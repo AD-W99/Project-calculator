@@ -13,31 +13,31 @@
                     <td colspan="4"><input readonly type="text" style="font-size: larger;" id="calcScreen"></td>
                 </tr>
                 <tr>
-                    <td ><input type="button" value="1" class="calcButton"></td>
-                    <td ><input type="button" value="2" class="calcButton"></td>
-                    <td ><input type="button" value="3" class="calcButton"></td>
-                    <td ><input type="button" value="+" class="calcButton"></td>
+                    <td ><input type="button" value="+" onclick="toOperate('+')" class="operatButton"></td>
+                    <td ><input type="button" value="1" onclick="toDisplay('1')" class="calcButton"></td>
+                    <td ><input type="button" value="2" onclick="toDisplay('2')" class="calcButton"></td>
+                    <td ><input type="button" value="3" onclick="toDisplay('3')" class="calcButton"></td>
                 </tr>
                 <tr>
-                    <td ><input type="button" value="4" class="calcButton"></td>
-                    <td ><input type="button" value="5" class="calcButton"></td>
-                    <td ><input type="button" value="6" class="calcButton"></td>
-                    <td ><input type="button" value="-" class="calcButton"></td>
+                    <td ><input type="button" value="-" onclick="toOperate('-')" class="operatButton"></td>
+                    <td ><input type="button" value="4" onclick="toDisplay('4')" class="calcButton"></td>
+                    <td ><input type="button" value="5" onclick="toDisplay('5')" class="calcButton"></td>
+                    <td ><input type="button" value="6" onclick="toDisplay('6')" class="calcButton"></td>
                 </tr>
                 <tr>
-                    <td ><input type="button" value="7" class="calcButton"></td>
-                    <td ><input type="button" value="8" class="calcButton"></td>
-                    <td ><input type="button" value="9" class="calcButton"></td>
-                    <td ><input type="button" value="*" class="calcButton"></td>
+                    <td ><input type="button" value="*" onclick="toOperate('*')" class="operatButton"></td>
+                    <td ><input type="button" value="7" onclick="toDisplay('7')" class="calcButton"></td>
+                    <td ><input type="button" value="8" onclick="toDisplay('8')" class="calcButton"></td>
+                    <td ><input type="button" value="9" onclick="toDisplay('9')" class="calcButton"></td>
                 </tr>
                 <tr>
-                    <td ><input type="button" value="AC" class="calcButton"></td>
-                    <td ><input type="button" value="0" class="calcButton"></td>
-                    <td ><input type="button" value="=" class="calcButton"></td>
-                    <td ><input type="button" value="/" class="calcButton"></td>
+                    <td ><input type="button" value="/" onclick="toOperate('/')" class="operatButton"></td>
+                    <td ><input type="button" value="C" onclick="toClear()" class="calcButton"></td>
+                    <td ><input type="button" value="0" onclick="toDisplay('0')" class="calcButton"></td>
+                    <td ><input type="button" value="=" onclick="result()" class="calcButton"></td>
                 </tr>
             </table>
         </div>
-        <script src="calculator-logic.js"></script>
+        <script src="calculator-logic-v2.js"></script>
     </body>
 </html>
